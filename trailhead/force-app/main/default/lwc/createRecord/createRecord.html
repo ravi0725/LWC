@@ -1,0 +1,11 @@
+<template>
+    <lightning-card title="CreateRecord with lightning/uiRecordApi" icon-name="standard:record">
+        <div class="slds-m-around_medium">
+            <lightning-input label="Id" disabled value={accountId}></lightning-input>
+            <lightning-input label="Name" onchange={onNameChange} class="slds-m-bottom_x-small"></lightning-input>
+            <lightning-input label="Site" onchange={handleSiteChange} class="slds-m-bottom_x-large"></lightning-input>
+            <lightning-input label="Account Company" onchange={handleAccCompChange} class="slds-m-bottom_x-large"></lightning-input>
+            <lightning-button label="Create Account" variant="brand" onclick={createAccount}></lightning-button>
+        </div>
+    </lightning-card>
+</template>
